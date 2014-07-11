@@ -1,7 +1,7 @@
 #SP-JobBoard
 ============
 
-Procedurally generates a job board from pdfs stored in a SharePoint Library
+Procedurally generates a job board from a SharePoint list with optional attachments.
 
 ##Usage
 ============
@@ -13,7 +13,7 @@ All files must be placed on the same domain as your SharePoint site to avoid err
 <div id="spjobs"></div>
 
 <script type="text/javascript">
-  spJobBoard.initModule($('#spjobs'), {guid: 'GUID of SharePoint Document Library goes here!'});
+  spJobBoard.initModule($('#spjobs'), {guid: 'GUID of SharePoint List goes here!'});
 </script>
 ```
 
@@ -30,5 +30,5 @@ All files must be placed on the same domain as your SharePoint site to avoid err
 ##Options
 - guid: 
   - Type: String
-  - Description: GUID of SharePoint library that you want to make a procedurally generated job board of.
+  - Description: GUID of SharePoint List that you want to make a procedurally generated job board of.
 

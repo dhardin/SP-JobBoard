@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--Third Party Stylesheets-->
+    <link rel="stylesheet" href="css\style.css" />
+
+    <!--Our Stylesheets-->
+
+    <!--Third Party Javascript-->
+    <script src="js\jquery-1.11.0.min.js"></script>
+    <!--Our Javascript-->
+    <script src="js\sp-job-board.js"></script>
+
+  
+</head>
+<body>
+    <h1>Site Directory</h1>
+    <div id="spjobs"></div>
+    <script>
+        $(document).ready(function () {
+            spJobBoard.initModule($('#spjobs'), { guid: 'GUID of SharePoint Document Library goes here!'});
+        });
+    </script>
+</body>
+</html>
